@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Check, ChevronLeft, CreditCard } from 'lucide-react'
+import { ChevronLeft, CreditCard } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"

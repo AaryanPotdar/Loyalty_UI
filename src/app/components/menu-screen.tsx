@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Separator } from "@/components/ui/separator"
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function MenuScreen() {
   const router = useRouter()
@@ -31,10 +32,13 @@ export default function MenuScreen() {
       <main className="flex-1 overflow-y-auto p-4 space-y-6 bg-gray-50">
         <Card className="border-0 shadow-sm overflow-hidden">
           <CardContent className="p-0">
-            <img 
+            <Image 
               src="/taro_milk_tea.jpg"
               alt="Taro Milk Tea" 
+              width={800}
+              height={600}
               className="w-full h-80 object-cover" 
+              priority
             />
             <div className="p-6 space-y-6">
               <h2 className="text-2xl font-medium">Taro Milk Tea</h2>
